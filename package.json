@@ -9,8 +9,8 @@
     "Canister"
   ],
   "scripts": {
-    "build": "webpack",
-    "prebuild": "dfx generate",
+    "prebuild": "/home/aljonski/.local/share/dfx/bin/dfx generate",
+    "build": "webpack --mode production",
     "start": "webpack serve --mode development --env development",
     "deploy:local": "dfx deploy --network=local",
     "deploy:ic": "dfx deploy --network=ic",
@@ -32,7 +32,7 @@
     "stream-browserify": "3.0.0",
     "terser-webpack-plugin": "^5.3.3",
     "util": "0.12.4",
-    "webpack": "^5.73.0",
+    "webpack": "^5.97.1",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.8.1"
   },
